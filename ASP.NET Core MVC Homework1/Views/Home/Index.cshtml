@@ -1,0 +1,57 @@
+﻿@model ASP.NET_Core_MVC_Homework1.Models.AllFoodsViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <hr />
+    <h1 style="color:red">DRINKS</h1>
+    <hr />
+    @foreach (var drink in Model.Drinks)
+    {
+        <div>
+            <h1>Drink ID : @drink.Id</h1>
+            <h1>Drink Name : @drink.Name</h1>
+            <h1>Drink Description : @drink.Description</h1>
+            <h1>Drink Price : @drink.Price</h1>
+
+            <hr />
+        </div>
+
+    }
+
+    <h1 style="color:red">FAST FOODS</h1>
+    <hr />
+
+    @foreach (var food in Model.FastFoods)
+    {
+        <div>
+            <h1>Food ID : @food.Id</h1>
+            <h1>Food Name : @food.Name</h1>
+            <h1>Food Description : @food.Description</h1>
+            <h1>Food Price: @food.Price</h1>
+            <h1>Food Cooking Time: @food.CookingTime</h1>
+            <hr />
+        </div>
+
+    }
+
+    <h1 style="color:red">HOT MEALS</h1>
+    <hr />
+
+    @foreach (var meal in Model.HotMeals)
+    {
+        <div>
+            <h1>Meal ID : @meal.Id</h1>
+            <h1>Meal Name : @meal.Name</h1>
+            <h1>Meal Description : @meal.Description</h1>
+            <h1>Meal Price: @meal.Price</h1>
+            <h1>Meal Quantity: @meal.Quantity</h1>
+            <hr />
+        </div>
+
+    }
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@model List<ASP.NET_Core_MVC_Homework1.Entities.FastFood>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <hr />
+    <h1 style="color:red">FAST FOODS</h1>
+    <hr />
+
+    @foreach (var food in Model)
+    {
+        <div>
+            <h1>Food ID : @food.Id</h1>
+            <h1>Food Name : @food.Name</h1>
+            <h1>Food Description : @food.Description</h1>
+            <h1>Food Price: @food.Price</h1>
+            <h1>Food Cooking Time: @food.CookingTime</h1>
+            <hr />
+        </div>
+
+    }
+</body>
+</html>
